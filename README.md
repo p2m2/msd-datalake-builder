@@ -21,9 +21,10 @@ mkdir /tmp/spark-events
    --conf "spark.eventLog.dir=file:///tmp/spark-events" \
    --executor-memory 1G \
    --num-executors 1 \
-   --jars ./sansa-0.8.0-rc3.jar \
+   --jars ./sansa.jar \
     assembly/msd-metdisease-request-compound-mesh.jar \
-    -l src/test/resources/skos-owl1-dl.rdf,src/test/resources/something.rdf \
+    -n 1 \
+    -l src/test/resources/skos-owl1-dl.rdf,src/test/resources/something.rdf,src/test/resources/something.ttl,src/test/resources/something.nt \
     -o ./out_test
 ```
 
