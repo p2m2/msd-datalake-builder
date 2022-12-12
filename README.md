@@ -32,11 +32,11 @@ mkdir /tmp/spark-events
 spark-submit  \
  --name DatalakeRdfForum \
  --deploy-mode cluster \
- --executor-memory 5g \
- --num-executors 48 \
+ --executor-memory 4g \
+ --num-executors 42 \
  --conf spark.yarn.appMasterEnv.JAVA_HOME="/usr/local/openjdk/jdk-12.0.2+10/" \
  --conf spark.executorEnv.JAVA_HOME="/usr/local/openjdk/jdk-12.0.2+10/"  \
  --conf spark.yarn.submit.waitAppCompletion="false" \
  --jars /usr/share/java/sansa-stack-spark_2.12-0.8.4_ExDistAD.jar \
- msd-metdisease-request-compound-mesh.jar
+ msd-datalake-builder.jar
 ```

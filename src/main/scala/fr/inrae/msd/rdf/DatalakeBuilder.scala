@@ -21,8 +21,8 @@ object DatalakeBuilder extends App {
   case class Config(
                    outputPath : String = "/rdf-test/forum-inference-CHEBI-PMID_partition",
                    rdfSources : Seq[String] = Seq(
-                     "/rdf/forum/DiseaseChem/PMID_CID/2022-06-08_2022-07-07-090250/pmid_cid_partition_40.ttl",
-                     "/rdf/forum/DiseaseChem/PMID_CID/2022-06-08_2022-07-07-090250/pmid_cid_endpoints_partition_64.ttl",
+                     "/rdf/forum/DiseaseChem/PMID_CID/2022-06-08_2022-07-07-090250/pmid_cid_partition_40.nt",
+                     "/rdf/forum/DiseaseChem/PMID_CID/2022-06-08_2022-07-07-090250/pmid_cid_endpoints_partition_64.nt",
                      "/rdf/nlm/mesh/SHA_5a785145/mesh.nt",
                      "/rdf/nlm/mesh-ontology/0.9.3/vocabulary_0.9.ttl",
                      "/rdf/ebi/chebi/13-Jun-2022/chebi.owl",
